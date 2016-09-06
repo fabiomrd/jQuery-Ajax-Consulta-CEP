@@ -1,9 +1,8 @@
 # jQuery-Ajax-Consulta-CEP
-Requisição jQuery Ajax no webservice de consultar CEP que retorna objeto JSON
 
 Projeto simples que consome serviço webservice de consultar CEP
 
-Requisição realizada com jQuery Ajax
+Requisição realizada com jQuery Ajax utilizando API RESTful JSON de consultar CEP
 
 Webservice provedor: https://viacep.com.br/
 
