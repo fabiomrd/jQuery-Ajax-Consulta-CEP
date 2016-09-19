@@ -1,7 +1,13 @@
 $(document).ready(function(){
+
+  $("#cep").mask("99.999-999");
+
        $("#btBuscar").click(function(){
 
     	   var cepvalue = $("#cep").val();
+         $("#cep").val("");
+        cepvalue = cepvalue.replace(/\./g, "");
+        cepvalue = cepvalue.replace(/\-/g, "");
     	   debugger;
     	   $.ajax({
     		    url: 'https://viacep.com.br/ws/' + cepvalue + '/json/',

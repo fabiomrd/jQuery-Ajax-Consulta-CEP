@@ -3,58 +3,72 @@
 <head>
 <meta charset="utf-8"/>
 <title>Consulta CEP</title>
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-   	 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       <script src="jquery-requisicao-ajax.js"></script>
    	 <script type="text/javascript" scr="jquery-requisicao-ajax.js"></script>
-   	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   	<script src="https://rawgit.com/digitalBush/jquery.maskedinput/1.4.1/dist/jquery.maskedinput.min.js"></script>
+
+   	<style type="text/css">
+   	.container{
+   		padding: 60px;
+   	
+   	}
+   	</style>
 </head>
 <body>
-
-<div class="container">
-
-
- <form class="form-horizontal">
-    <div class="form-group">
-    <div class="container">
-  <h3 align="center">Teste de chamada jQuery Ajax - Consulta de CEP </h3>
-  <form class="form-horizontal">
-    <div class="form-group">
-      <label class="control-label col-sm-3" for="CEP">CEP:</label>
-      <div class="col-sm-7">
-        <input type="text" class="form-control" id="cep" placeholder="Digite o CEP aqui">
-      </div>
-    </div>
-    <div class="form-group">
-      <label class="control-label col-sm-3" >Logradouro:</label>
-      <div class="col-sm-7">
-        <input type="text" class="form-control" id="logradouro" >
-      </div>
-    </div>
-        <div class="form-group">
-      <label class="control-label col-sm-3" >Bairro:</label>
-      <div class="col-sm-7">
-        <input type="text" class="form-control" id="bairro" >
-      </div>
-    </div>
-            <div class="form-group">
-      <label class="control-label col-sm-3" >UF:</label>
-      <div class="col-sm-7">
-        <input type="text" class="form-control" id="uf" >
-      </div>
-    </div>
-                <div class="form-group">
-      <label class="control-label col-sm-3" >Cidade:</label>
-      <div class="col-sm-7">
-        <input type="text" class="form-control" id="cidade" >
-      </div>
-    </div>
-    <div class="form-group">
-      <div class="col-sm-offset-3 col-sm-7">
-        <button id="btBuscar" class="btn btn-default">Buscar</button>
-      </div>
-    </div>
+  
+<div class="container col-sm-3">
 </div>
 
+<div class="container col-sm-6">
+
+  <div class="page-header">
+   <h3 align="center">Teste de chamada jQuery Ajax</h3>
+    <h3 align="center">Consulta de CEP </h3>
+  </div>
+
+
+
+<div>
+<div class="input-group">
+  <span class="input-group-addon">CEP</span>
+  <input type="text" id="cep" class="form-control" placeholder="Digite o CEP aqui">
+</div>
+ <button id="btBuscar" class="btn btn-default btn-block btn-primary">Buscar </button>
+</div>
+
+<br>
+<div class="input-group col-sm-12">
+  <span class="input-group-addon">Logradouro</span>
+  <input type="text" id="logradouro" disabled class="form-control" >
+</div>
+
+<div class="input-group col-sm-12">
+  <span class="input-group-addon">Complemento</span>
+  <input type="text" id="complemento" disabled class="form-control" >
+</div>
+
+<div class="input-group col-sm-12">
+  <span class="input-group-addon">Bairro</span>
+  <input type="text" id="bairro" disabled class="form-control" >
+</div>
+
+
+<div class="input-group col-sm-12">
+  <span class="input-group-addon">UF</span>
+  <input type="text" id="uf" disabled class="form-control" >
+</div>
+
+
+<div class="input-group col-sm-12">
+  <span class="input-group-addon">Cidade</span>
+  <input type="text" id="cidade" disabled class="form-control" >
+</div>
+
+<div class="container col-sm-3">
+</div>
+  	
 </body>
 </html>
