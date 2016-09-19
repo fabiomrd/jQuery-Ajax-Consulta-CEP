@@ -4,45 +4,57 @@
 <meta charset="utf-8"/>
 <title>Consulta CEP</title>
    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-   <script src="jquery-requisicao-ajax.js"></script>
-   	<link rel="stylesheet" type="text/css" href="teste.css">
+   	 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="jquery-requisicao-ajax.js"></script>
+   	 <script type="text/javascript" scr="jquery-requisicao-ajax.js"></script>
+   	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
 
-<div class="painel">
-<h3>Teste de chamada jQuery Ajax - Consulta de CEP </h3>
+<div class="container">
 
-<div class="tela">
-<div align="center">
-<label>CEP</label>
-<input id="cep" ></input>
-<button id="btBuscar">Buscar</button>
-<button id="btLimpar">Limpar</button>
-<div>
 
-<table>
- <tr>
- 	<td>Logradouro</td>
- 	<td><input type="text" id="logradouro" /></td>
- </tr>
- <tr>		
- 	<td>Complemento</td>
- 	<td><input type="text" id="complemento" size="40" /></td>
- </tr>
- <tr>
- 	<td>Bairro</td>
- 	<td><input type="text" id="bairro" /></td>
- </tr>
-<tr>
-	<td>UF</td>
-	<td><input type="text" id="uf" size="1" /></td>
-</tr>
- <tr>
- <td>Cidade</td>
- <td><input type="text" id="cidade" /></td>
-</tr>
-</table> 	
-<div>
+ <form class="form-horizontal">
+    <div class="form-group">
+    <div class="container">
+  <h3 align="center">Teste de chamada jQuery Ajax - Consulta de CEP </h3>
+  <form class="form-horizontal">
+    <div class="form-group">
+      <label class="control-label col-sm-3" for="CEP">CEP:</label>
+      <div class="col-sm-7">
+        <input type="text" class="form-control" id="cep" placeholder="Digite o CEP aqui">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-3" >Logradouro:</label>
+      <div class="col-sm-7">
+        <input type="text" class="form-control" id="logradouro" >
+      </div>
+    </div>
+        <div class="form-group">
+      <label class="control-label col-sm-3" >Bairro:</label>
+      <div class="col-sm-7">
+        <input type="text" class="form-control" id="bairro" >
+      </div>
+    </div>
+            <div class="form-group">
+      <label class="control-label col-sm-3" >UF:</label>
+      <div class="col-sm-7">
+        <input type="text" class="form-control" id="uf" >
+      </div>
+    </div>
+                <div class="form-group">
+      <label class="control-label col-sm-3" >Cidade:</label>
+      <div class="col-sm-7">
+        <input type="text" class="form-control" id="cidade" >
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-3 col-sm-7">
+        <button id="btBuscar" class="btn btn-default">Buscar</button>
+      </div>
+    </div>
+</div>
 
 </body>
 </html>
